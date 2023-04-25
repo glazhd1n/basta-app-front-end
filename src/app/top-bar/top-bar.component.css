@@ -1,0 +1,106 @@
+.top-nav-bar {
+  font-family: '.AppleSystemUIFont', sans-serif;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  /*padding-right: 30px;*/
+  background-color: black;
+  /*position: fixed;*/
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-nav-bar img {
+  height: 40px;
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+}
+
+.item2 {
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.stick {
+  height: 100%;
+  width: 1px;
+  background-color: gray;
+  margin: 0 10px;
+}
+
+.search-bar {
+  font-family: '.AppleSystemUIFont', "FontAwesome",sans-serif;
+  width: 250px;
+  height: 34px;
+  color: white;
+  background-color: #222222;
+  border: calc(1px / 100) #222222 solid;
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+.reg-log {
+  background: none;
+  color: white;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.reg-log-div {
+  background: none;
+  text-align: center;
+  padding: 0 10px;
+  border: calc(1px / 100) gray solid;
+  height: 35px;
+  border-radius: 5px;
+  margin: 0 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reg-log-div:hover:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 200px;
+  margin-left: 50px;
+  background: #fff;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  left: -400px;
+  top: -100px;
+  z-index: 1;
+  transform: rotate(45deg);
+  position: absolute;
+  animation: movingFlare 2s ease-in-out 0.05s infinite;
+}
+
+@keyframes movingFlare {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}

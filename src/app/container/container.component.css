@@ -1,0 +1,104 @@
+.container {
+  width: 80%;
+  height: 100%;
+  /*background-color: lightgray;*/
+}
+
+.find {
+  display: flex;
+  width: available;
+  margin: 10px 20px;
+}
+
+.search-bar {
+  font-family: '.AppleSystemUIFont', "FontAwesome",sans-serif;
+  width: 100%;
+  height: 34px;
+  color: white;
+  background-color: #222222;
+  border: calc(1px / 100) #222222 solid;
+  border-radius: 5px;
+  /*margin: 0 5px;*/
+  padding: 0 5px;
+}
+
+.paiful {
+  font-family: '.AppleSystemUIFont', "FontAwesome",sans-serif;
+  display: flex;
+  align-items: center;
+}
+.paiful:after {
+  content: 'Платные';
+}
+.free {
+  font-family: '.AppleSystemUIFont', "FontAwesome",sans-serif;
+  display: flex;
+  align-items: center;
+}
+.free:after {
+  content: 'Бесплатные';
+}
+
+.check-box {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+.check-box:hover {
+  cursor: pointer;
+}
+
+.find-button {
+  width: 200px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  margin: 0 0 0 10px;
+  background-color: #5CDB5C;
+  border: none;
+  border-radius: 7px;
+}
+
+.online-courses {
+  font-family: '.AppleSystemUIFont', "FontAwesome",sans-serif;
+  font-size: 50px;
+  margin: 40px 20px;
+}
+
+.pick-theme {
+  width: 100%;
+  display: flex;
+  margin: 1px 20px;
+}
+
+.course-name {
+  padding: 10px;
+  font-family: '.AppleSystemUIFont', "FontAwesome",sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  border: 0px;
+}
+
+.course-name:hover {
+  cursor: pointer;
+  color: #54ad54;
+}
+
+.radio-course-name {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+:checked + span {
+  color: #288b28;
+  border-bottom: 2px solid #288b28;
+}
+
+.gray-line {
+  width: 100%;
+  margin: 11px 0;
+  border-bottom: 1px solid gray;
+}
