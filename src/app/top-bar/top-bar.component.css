@@ -69,6 +69,14 @@
   position: relative;
 }
 
+.reg-log-div:hover {
+  cursor: pointer;
+}
+
+.reg-log:hover {
+  cursor: pointer;
+}
+
 .reg-log-div:hover:after {
   content: "";
   display: block;

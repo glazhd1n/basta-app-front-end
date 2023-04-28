@@ -1,16 +1,17 @@
-<div class="top-nav-bar">
+<div class="top-nav-bar" id="test">
   <div class="item1">
-    <img src="assets/google-logo.png" alt="basta-logo">
+    <a href="/"><img src="assets/Basta.png" alt="basta-logo"></a>
     <p>Каталог</p>
   </div>
   <div class="item2">
     <input type="text" placeholder="&#xF002; Поиск.." class="search-bar">
     <div class="stick"></div>
     <div class="reg-log-div">
-      <input type="button" value="Войти" class="reg-log">
+      <input type="button" value="Войти" class="reg-log" (click)="createLogin('/login')">
     </div>
     <div class="reg-log-div">
-      <input type="button" value="Регистрация" class="reg-log">
+      <input type="button" value="Регистрация" class="reg-log" (click)="createLogin('/register')">
     </div>
   </div>
 </div>
+<!--<app-login-form></app-login-form>-->

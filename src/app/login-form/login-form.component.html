@@ -1,0 +1,18 @@
+<div class="login-div">
+  <div class="login-borders">
+    <button (click)="goHome()" class="close-button">&times;</button>
+    <div class="login-email">
+      <input type="email" name="email" id="email" class="login-password-input" required id="login" placeholder="...">
+      <p id="test">Email</p>
+    </div>
+    <div class="input-password">
+      <input type="password" name="password" id="password" placeholder="..." class="login-password-input" required>
+      <p id="password-text">Password</p>
+    </div>
+    <div class="login-register">
+      <input type="submit" value="Submit" (click)="goHome()" class="log-button">
+      <label for="registration" class="reg-label">Don't have account?</label>
+      <input type="button" value="register"(click)="goRegister()" class="log-button registration" id="registration">
+    </div>
+  </div>
+</div>
