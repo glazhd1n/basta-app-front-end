@@ -13,22 +13,23 @@
   <div class="pick-theme">
     <form action="">
       <label>
-          <input type="radio" name="course_name" id="3" class="radio-course-name">
-        <span class="course-name">course-name</span>
+        <input type="radio" name="course_name" id="3" class="radio-course-name" value="front" [(ngModel)]="course" #phoneTitle="ngModel">
+        <span class="course-name">front</span>
       </label>
       <label>
-        <input type="radio" name="course_name" id="4" class="radio-course-name">
-        <span class="course-name">course-name</span>
+        <input type="radio" name="course_name" id="4" class="radio-course-name" value="programmirovaniye" [(ngModel)]="course" #phoneTitle="ngModel">
+        <span class="course-name">programmirovaniye</span>
       </label>
       <label>
-        <input type="radio" name="course_name" id="5" class="radio-course-name">
-        <span class="course-name">course-name</span>
+        <input type="radio" name="course_name" id="5" class="radio-course-name" value="back" [(ngModel)]="course" #phoneTitle="ngModel">
+        <span class="course-name">back</span>
       </label>
       <label>
-        <input type="radio" name="course_name" id="6" class="radio-course-name">
-        <span class="course-name">course-name</span>
+        <input type="radio" name="course_name" id="6" class="radio-course-name" value="iOS Development" [(ngModel)]="course" #phoneTitle="ngModel">
+        <span class="course-name">iOS Development</span>
       </label>
     </form>
   </div>
   <div class="gray-line"></div>
+  <app-show-course></app-show-course>
 </div>

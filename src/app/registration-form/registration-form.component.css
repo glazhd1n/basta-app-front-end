@@ -1,0 +1,151 @@
+.login-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 9999;
+  box-sizing: border-box;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-borders {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-password-input {
+  border: 1px black solid;
+  height: 30px;
+  width: 80%;
+  border: none;
+  background: none;
+  border-bottom: 1px gray solid;
+  margin: 20px 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+.login-email, .input-password {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.test, #password-text, #repeat-password-text {
+  position: absolute;
+  left: 50px;
+  align-self: center;
+  font-family: '.AppleSystemUIFont', "FontAwesome", sans-serif;
+  color: gray;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#login:invalid, #email:invalid {
+  border-bottom: 1px solid darkred;
+}
+
+#login::placeholder,
+#password::placeholder,
+#email::placeholder,
+#repeat-password::placeholder {
+  color: whitesmoke;
+}
+
+#login:focus, #password:focus, #email:focus, #repeat-password:focus {
+  outline: none;
+}
+
+#login:focus ~.test, #password:focus ~#password-text, #email:focus ~.test, #repeat-password:focus ~#repeat-password-text{
+  transform: translateY(-40px) translateX(-10px);
+  transition: 0.3s ease-in-out;
+}
+p {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  cursor: text;
+}
+#login:not(:placeholder-shown) + .test, #password:not(:placeholder-shown) + #password-text, #email:not(:placeholder-shown) + .test, #repeat-password:not(:placeholder-shown) + #repeat-password-text {
+  transform: translateY(-40px) translateX(-10px);
+  transition: 0.3s ease-in-out;
+}
+
+#login:not(:focus):empty ~.test, #password:not(:focus):empty ~#password-text, #email:not(:focus):empty ~.test, #repeat-password:not(:focus):empty ~#repeat-password-text{
+  transition: 0.3s ease-in-out;
+}
+
+/*input[type="email"]:not(:empty) + .test{*/
+/*  transform: translateY(-20px);*/
+/*}*/
+
+/*.login-password-input::placeholder {*/
+/*  font-family: '.AppleSystemUIFont', "FontAwesome", sans-serif;*/
+/*  font-weight: 600;*/
+/*  font-size: 20px;*/
+/*}*/
+
+.login-register {
+  display: flex;
+  flex-direction: column;
+  height: available;
+}
+
+.log-button {
+  font-family: '.AppleSystemUIFont', "FontAwesome", sans-serif;
+  font-size: 30px;
+  padding: 10px 100px;
+  margin: 10px 0px;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+
+
+}
+
+.registration {
+  font-size: 20px;
+  background-color: aqua;
+}
+.reg-label {
+  font-size: 20px;
+}
+
+.close-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 30px;
+  border: none;
+  background: none;
+}
+
+.to_reg {
+  text-align: center;
+  margin-top: 50px;
+  font-family: '.AppleSystemUIFont', FontAwesome, sans-serif;
+  font-size: 12px;
+}
+
+.reg-link {
+  color: inherit;
+  text-decoration: underline;
+}
+.reg-link:visited {
+  text-decoration: underline;
+}

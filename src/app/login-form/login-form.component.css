@@ -70,7 +70,12 @@
   transform: translateY(-40px) translateX(-10px);
   transition: 0.3s ease-in-out;
 }
-
+p {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  cursor: text;
+}
 #login:not(:placeholder-shown) + #test, #password:not(:placeholder-shown) + #password-text{
   transform: translateY(-40px) translateX(-10px);
   transition: 0.3s ease-in-out;
@@ -93,14 +98,22 @@
 .login-register {
   display: flex;
   flex-direction: column;
+  height: available;
 }
 
 .log-button {
   font-family: '.AppleSystemUIFont', "FontAwesome", sans-serif;
   font-size: 30px;
-  margin-bottom: 10px;
+  padding: 10px 100px;
+  margin: 10px 0px;
   border-radius: 40px;
-  background-color: lightgreen;
+  border: none;
+  color: white;
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gradient(to right, #38ef7d, #11998e);
+
+
 }
 
 .registration {
@@ -118,4 +131,19 @@
   font-size: 30px;
   border: none;
   background: none;
+}
+
+.to_reg {
+  text-align: center;
+  margin-top: 50px;
+  font-family: '.AppleSystemUIFont', FontAwesome, sans-serif;
+  font-size: 12px;
+}
+
+.reg-link {
+  color: inherit;
+  text-decoration: underline;
+}
+.reg-link:visited {
+  text-decoration: underline;
 }

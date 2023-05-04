@@ -1,1 +1,28 @@
-<p>registration-form works!</p>
+<div class="login-div">
+  <div class="login-borders">
+    <button (click)="goHome()" class="close-button">&times;</button>
+    <label class="login-email">
+      <input type="email" name="email" id="email" class="login-password-input" required placeholder="...">
+      <p class="test">Email</p>
+    </label>
+    <label class="login-email">
+      <input type="email" name="email" class="login-password-input" required id="login" placeholder="...">
+      <p class="test">Username</p>
+    </label>
+    <label class="input-password">
+      <input type="password" name="password" id="password" placeholder="..." class="login-password-input" required>
+      <p id="password-text">Password</p>
+    </label>
+    <label class="input-password">
+      <input type="password" name="password" id="repeat-password" placeholder="..." class="login-password-input" required>
+      <p id="repeat-password-text">Repeat password</p>
+    </label>
+    <div class="login-register">
+      <input type="submit" value="Register" (click)="goHome()" class="log-button">
+      <div class="to_reg">
+        Already have account?
+        <a href="/login" class="reg-link">login</a>
+      </div>
+    </div>
+  </div>
+</div>

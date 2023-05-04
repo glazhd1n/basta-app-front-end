@@ -1,0 +1,9 @@
+.not-found {
+  background-color: white;
+  position: absolute;
+  inset: 0;
+
+  font-family: '.AppleSystemUIFont', FontAwesome, sans-serif;
+  font-size: 60px;
+  text-align: center;
+}

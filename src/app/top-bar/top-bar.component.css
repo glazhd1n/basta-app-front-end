@@ -112,3 +112,13 @@
     margin-left: 80px;
   }
 }
+
+.catalog {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.catalog:visited {
+  text-decoration: none;
+}
